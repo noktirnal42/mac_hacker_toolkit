@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066A3FD09C99B5A640A348DE /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73D391365CFD1075612CD609 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0D39F1EE589B24228BA8A1A4 /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F464CF0C3459C34102800EA /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15971FB627196538552149D9 /* ToolkitUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EC69CC1208CF0DADBB18A3 /* ToolkitUtilities.swift */; };
+		22EBE6CBC1C19DEB78A8BADA /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707B5A4E64F179271BF3FC60 /* CoreML.framework */; };
+		2CB8A3349C30593991439A7D /* QuickActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA818081F0016460A22A390A /* QuickActionButton.swift */; };
+		2D128E9C2E54223C0BB257FE /* CoreML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 707B5A4E64F179271BF3FC60 /* CoreML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3446AD5F1698CAE17803B402 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951CBF018429DB206B9190E3 /* CoreWLAN.framework */; };
+		34E1F485121FDC523BD3DF6F /* NetworkScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32548656AFEA01DDDB5A1342 /* NetworkScannerView.swift */; };
+		38E9323663855B79A27CD2C3 /* IOBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6F4A124943116999F36D3C9 /* IOBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E8B71488AEB3949CCAE635F /* ForensicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A5DC7D4EFF4BBACDE05F9 /* ForensicsView.swift */; };
+		3F25733A04DFEAB5B1483107 /* ToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3644578AFB6BB5425E7AC091 /* ToolManager.swift */; };
+		532832B115F1CE50A27BB313 /* BluetoothScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE76FD893F547770599D5D /* BluetoothScannerView.swift */; };
+		542B37F2C1D8ED103543D4D7 /* ToolkitProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41932CBA3817A447C13DF27F /* ToolkitProtocols.swift */; };
+		54C4662E6CA668481C90A405 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812AB3C4652A96E28AD9222C /* TimelineView.swift */; };
+		5583ADB5A78161ED571A2BD1 /* HardwareMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD6CD27B37659D623B6F2F3 /* HardwareMonitor.swift */; };
+		55E1CFEE7ED04E06966F4B50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529A1C62D6EE10AB4668DE4 /* ContentView.swift */; };
+		57824DC64E73F08EC745C4E2 /* MainDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DAA5230D20085728F26A5 /* MainDashboard.swift */; };
+		668B5646D3BF81C69BF36CBF /* Metal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9399385578984035988AAB /* Metal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F05BFFD3D94944C94A8821D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC7AE0C62C847820F8DCE23 /* SettingsView.swift */; };
+		73290FB63F8BD465B0D2C01A /* SecurityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E60258D9C218EC47D8D2F /* SecurityTool.swift */; };
+		748252B01DA4F6DC1B7AA53E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9399385578984035988AAB /* Metal.framework */; };
+		7ABB6AC1F8FE458ED770A25C /* CoreWLAN.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 951CBF018429DB206B9190E3 /* CoreWLAN.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F207C1E25C56B4BC872859E /* AIOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F4E04F7E270468D6EC04DC /* AIOrchestrator.swift */; };
+		82ABFA0BDF00CEAE58C77532 /* MacHackerToolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BF5F098E99F5E14AE9260B /* MacHackerToolkitApp.swift */; };
+		83972C213AF9106021F0E6AD /* ToolCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CB89CD0AB81EF5A828161 /* ToolCategoryView.swift */; };
+		8A39185F6A89CF110C134F23 /* PasswordToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF2E79CD747596CB502F7A /* PasswordToolsView.swift */; };
+		8BD63824112E7EBA44A6E034 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F4A124943116999F36D3C9 /* IOBluetooth.framework */; };
+		95E7527E04861129FD80649A /* ReverseEngineeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE60E1D7468E8C2B11AAC31 /* ReverseEngineeringView.swift */; };
+		9C5DC2CF17030088DB0E3EE7 /* ExploitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF48F458701C9DE02061BBB /* ExploitationView.swift */; };
+		9D663D4CC041A16EE171D363 /* ReportsDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F980CC83190BB96AC788202 /* ReportsDashboard.swift */; };
+		BF31B83FA2F7240FBC79C945 /* AuditLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E8368482459D30E37DFAF /* AuditLogger.swift */; };
+		C9C541F344898FF4DC87016C /* AIChatPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BA0EA20272EE1EE2C4E61 /* AIChatPanel.swift */; };
+		CF637FF8921A0A543EFF0EBB /* WirelessScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06268ECA319E9B46FC16B5 /* WirelessScannerView.swift */; };
+		D733B3E6BC16745C01FECF59 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D391365CFD1075612CD609 /* Network.framework */; };
+		D98628937E1B56AE24515A12 /* AIAnalysisHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F4EE6767A410382E07085 /* AIAnalysisHub.swift */; };
+		DBBDDB8A8DB367B2F8E5EAA2 /* UpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B6D77607C12FB5F4F194 /* UpdateManager.swift */; };
+		DDF9E9BD98D30B4A3A8EB4C5 /* tool_catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = E74DFC7E62C642B984DB7F9C /* tool_catalog.json */; };
+		F83CFFDCFA482235993EC795 /* PluginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63E04784AECE94F79F290E /* PluginManager.swift */; };
+		FF0192C8437D7ACD9DC11A4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F464CF0C3459C34102800EA /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D66669743DE5893536354A2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDAF6157B1C9B83C80F018C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5138ACCA6EC01D001AA7728;
+			remoteInfo = MacHackerToolkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3677AA5C3FCF1C2D0EA4385F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7ABB6AC1F8FE458ED770A25C /* CoreWLAN.framework in Embed Frameworks */,
+				38E9323663855B79A27CD2C3 /* IOBluetooth.framework in Embed Frameworks */,
+				0D39F1EE589B24228BA8A1A4 /* Security.framework in Embed Frameworks */,
+				066A3FD09C99B5A640A348DE /* Network.framework in Embed Frameworks */,
+				668B5646D3BF81C69BF36CBF /* Metal.framework in Embed Frameworks */,
+				2D128E9C2E54223C0BB257FE /* CoreML.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0529A1C62D6EE10AB4668DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		059DAA5230D20085728F26A5 /* MainDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboard.swift; sourceTree = "<group>"; };
+		1B1E60258D9C218EC47D8D2F /* SecurityTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTool.swift; sourceTree = "<group>"; };
+		1F464CF0C3459C34102800EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
+		244A5DC7D4EFF4BBACDE05F9 /* ForensicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForensicsView.swift; sourceTree = "<group>"; };
+		2F980CC83190BB96AC788202 /* ReportsDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsDashboard.swift; sourceTree = "<group>"; };
+		32548656AFEA01DDDB5A1342 /* NetworkScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScannerView.swift; sourceTree = "<group>"; };
+		3644578AFB6BB5425E7AC091 /* ToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolManager.swift; sourceTree = "<group>"; };
+		3A7E8368482459D30E37DFAF /* AuditLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditLogger.swift; sourceTree = "<group>"; };
+		41932CBA3817A447C13DF27F /* ToolkitProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolkitProtocols.swift; sourceTree = "<group>"; };
+		4C4BA0EA20272EE1EE2C4E61 /* AIChatPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatPanel.swift; sourceTree = "<group>"; };
+		4D9399385578984035988AAB /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Metal.framework; sourceTree = "<group>"; };
+		54EC69CC1208CF0DADBB18A3 /* ToolkitUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolkitUtilities.swift; sourceTree = "<group>"; };
+		6D9F4EE6767A410382E07085 /* AIAnalysisHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnalysisHub.swift; sourceTree = "<group>"; };
+		707B5A4E64F179271BF3FC60 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreML.framework; sourceTree = "<group>"; };
+		73D391365CFD1075612CD609 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Network.framework; sourceTree = "<group>"; };
+		7808FF7C6516110AE56046D4 /* MacHackerToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacHackerToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E62A95E3321F60D69FC2B9 /* MacHackerToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacHackerToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		812AB3C4652A96E28AD9222C /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		89BF2E79CD747596CB502F7A /* PasswordToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordToolsView.swift; sourceTree = "<group>"; };
+		9405B6D77607C12FB5F4F194 /* UpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateManager.swift; sourceTree = "<group>"; };
+		951CBF018429DB206B9190E3 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreWLAN.framework; sourceTree = "<group>"; };
+		9BF48F458701C9DE02061BBB /* ExploitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitationView.swift; sourceTree = "<group>"; };
+		AA818081F0016460A22A390A /* QuickActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionButton.swift; sourceTree = "<group>"; };
+		CAD6CD27B37659D623B6F2F3 /* HardwareMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareMonitor.swift; sourceTree = "<group>"; };
+		CBC7AE0C62C847820F8DCE23 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D45CB89CD0AB81EF5A828161 /* ToolCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCategoryView.swift; sourceTree = "<group>"; };
+		D6F4A124943116999F36D3C9 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOBluetooth.framework; sourceTree = "<group>"; };
+		DB63E04784AECE94F79F290E /* PluginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginManager.swift; sourceTree = "<group>"; };
+		DF06268ECA319E9B46FC16B5 /* WirelessScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WirelessScannerView.swift; sourceTree = "<group>"; };
+		E5AE76FD893F547770599D5D /* BluetoothScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScannerView.swift; sourceTree = "<group>"; };
+		E74DFC7E62C642B984DB7F9C /* tool_catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tool_catalog.json; sourceTree = "<group>"; };
+		E9BF5F098E99F5E14AE9260B /* MacHackerToolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacHackerToolkitApp.swift; sourceTree = "<group>"; };
+		F2F4E04F7E270468D6EC04DC /* AIOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIOrchestrator.swift; sourceTree = "<group>"; };
+		FCE60E1D7468E8C2B11AAC31 /* ReverseEngineeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseEngineeringView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD2BEB7511198C2C23DCEB72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3446AD5F1698CAE17803B402 /* CoreWLAN.framework in Frameworks */,
+				8BD63824112E7EBA44A6E034 /* IOBluetooth.framework in Frameworks */,
+				FF0192C8437D7ACD9DC11A4B /* Security.framework in Frameworks */,
+				D733B3E6BC16745C01FECF59 /* Network.framework in Frameworks */,
+				748252B01DA4F6DC1B7AA53E /* Metal.framework in Frameworks */,
+				22EBE6CBC1C19DEB78A8BADA /* CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0066356E711B33C8D0D71064 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				671A1318C1A1DCC1CC085675 /* Models */,
+				644E5603277C2B11CE28CCF0 /* Plugins */,
+				D1A769C3726E05FF09A045CF /* Protocols */,
+				18AF915BB217ABE5269BAB61 /* Resources */,
+				B353E704B056F2F06A63F769 /* Services */,
+				D36EC45164109C03D67F2579 /* Utilities */,
+				940684EA79E10E0D5F35F7C7 /* Views */,
+				0529A1C62D6EE10AB4668DE4 /* ContentView.swift */,
+				E9BF5F098E99F5E14AE9260B /* MacHackerToolkitApp.swift */,
+				AA818081F0016460A22A390A /* QuickActionButton.swift */,
+			);
+			name = Sources;
+			path = MacHackerToolkit/Sources;
+			sourceTree = "<group>";
+		};
+		18AF915BB217ABE5269BAB61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E74DFC7E62C642B984DB7F9C /* tool_catalog.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		360DA053C4F87C91D2F706F2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CBC7AE0C62C847820F8DCE23 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		49DBD5F2249D8CA43FA81E6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7808FF7C6516110AE56046D4 /* MacHackerToolkit.app */,
+				78E62A95E3321F60D69FC2B9 /* MacHackerToolkitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FEFBC98A8262405EFD972C6 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				6D9F4EE6767A410382E07085 /* AIAnalysisHub.swift */,
+				4C4BA0EA20272EE1EE2C4E61 /* AIChatPanel.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		60FA9A7A1FF1433B95AFE9D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				707B5A4E64F179271BF3FC60 /* CoreML.framework */,
+				951CBF018429DB206B9190E3 /* CoreWLAN.framework */,
+				D6F4A124943116999F36D3C9 /* IOBluetooth.framework */,
+				4D9399385578984035988AAB /* Metal.framework */,
+				73D391365CFD1075612CD609 /* Network.framework */,
+				1F464CF0C3459C34102800EA /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		626A11F1D60B5D52CD2CB40E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			path = MacHackerToolkit/Tests;
+			sourceTree = "<group>";
+		};
+		644E5603277C2B11CE28CCF0 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		671A1318C1A1DCC1CC085675 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E60258D9C218EC47D8D2F /* SecurityTool.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8AD6149FD16E5FFDC04CBCA3 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				059DAA5230D20085728F26A5 /* MainDashboard.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		933F868B0F07B78210674A36 /* Forensics */ = {
+			isa = PBXGroup;
+			children = (
+				244A5DC7D4EFF4BBACDE05F9 /* ForensicsView.swift */,
+			);
+			path = Forensics;
+			sourceTree = "<group>";
+		};
+		940684EA79E10E0D5F35F7C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FEFBC98A8262405EFD972C6 /* AI */,
+				ED7E8EF923E7D3CA3E904D41 /* Components */,
+				8AD6149FD16E5FFDC04CBCA3 /* Dashboard */,
+				933F868B0F07B78210674A36 /* Forensics */,
+				FEAEB6F18C5321D71C1E0AF9 /* Reports */,
+				BB9BEFEF1A964791571AC2E7 /* ReverseEngineering */,
+				360DA053C4F87C91D2F706F2 /* Settings */,
+				BB935287160B7C4A88AEC8AF /* Tools */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9AE0CB5BDDF547FCB6FEFA9B = {
+			isa = PBXGroup;
+			children = (
+				0066356E711B33C8D0D71064 /* Sources */,
+				626A11F1D60B5D52CD2CB40E /* Tests */,
+				60FA9A7A1FF1433B95AFE9D0 /* Frameworks */,
+				49DBD5F2249D8CA43FA81E6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B353E704B056F2F06A63F769 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2F4E04F7E270468D6EC04DC /* AIOrchestrator.swift */,
+				3A7E8368482459D30E37DFAF /* AuditLogger.swift */,
+				CAD6CD27B37659D623B6F2F3 /* HardwareMonitor.swift */,
+				DB63E04784AECE94F79F290E /* PluginManager.swift */,
+				3644578AFB6BB5425E7AC091 /* ToolManager.swift */,
+				9405B6D77607C12FB5F4F194 /* UpdateManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BB935287160B7C4A88AEC8AF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E5AE76FD893F547770599D5D /* BluetoothScannerView.swift */,
+				9BF48F458701C9DE02061BBB /* ExploitationView.swift */,
+				32548656AFEA01DDDB5A1342 /* NetworkScannerView.swift */,
+				89BF2E79CD747596CB502F7A /* PasswordToolsView.swift */,
+				D45CB89CD0AB81EF5A828161 /* ToolCategoryView.swift */,
+				DF06268ECA319E9B46FC16B5 /* WirelessScannerView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BB9BEFEF1A964791571AC2E7 /* ReverseEngineering */ = {
+			isa = PBXGroup;
+			children = (
+				FCE60E1D7468E8C2B11AAC31 /* ReverseEngineeringView.swift */,
+			);
+			path = ReverseEngineering;
+			sourceTree = "<group>";
+		};
+		D1A769C3726E05FF09A045CF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				41932CBA3817A447C13DF27F /* ToolkitProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D36EC45164109C03D67F2579 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				54EC69CC1208CF0DADBB18A3 /* ToolkitUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		ED7E8EF923E7D3CA3E904D41 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FEAEB6F18C5321D71C1E0AF9 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				2F980CC83190BB96AC788202 /* ReportsDashboard.swift */,
+				812AB3C4652A96E28AD9222C /* TimelineView.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5138ACCA6EC01D001AA7728 /* MacHackerToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E571E46CDEF9AEEF6AA87800 /* Build configuration list for PBXNativeTarget "MacHackerToolkit" */;
+			buildPhases = (
+				63B06074E0E909B0BA02D4B8 /* Sources */,
+				C396C91589AEA27D646A107D /* Resources */,
+				DD2BEB7511198C2C23DCEB72 /* Frameworks */,
+				3677AA5C3FCF1C2D0EA4385F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacHackerToolkit;
+			packageProductDependencies = (
+			);
+			productName = MacHackerToolkit;
+			productReference = 7808FF7C6516110AE56046D4 /* MacHackerToolkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2191BD00F32E883DCA2B9F4 /* MacHackerToolkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1E19851682937690657B16 /* Build configuration list for PBXNativeTarget "MacHackerToolkitTests" */;
+			buildPhases = (
+				0A3D4823254F8014B20CACCF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08C259FFB4332541E12AB761 /* PBXTargetDependency */,
+			);
+			name = MacHackerToolkitTests;
+			packageProductDependencies = (
+			);
+			productName = MacHackerToolkitTests;
+			productReference = 78E62A95E3321F60D69FC2B9 /* MacHackerToolkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDAF6157B1C9B83C80F018C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A5138ACCA6EC01D001AA7728 = {
+						DevelopmentTeam = "";
+					};
+					B2191BD00F32E883DCA2B9F4 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = ABD141CB9075B79149D02AD5 /* Build configuration list for PBXProject "MacHackerToolkit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9AE0CB5BDDF547FCB6FEFA9B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 49DBD5F2249D8CA43FA81E6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5138ACCA6EC01D001AA7728 /* MacHackerToolkit */,
+				B2191BD00F32E883DCA2B9F4 /* MacHackerToolkitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C396C91589AEA27D646A107D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF9E9BD98D30B4A3A8EB4C5 /* tool_catalog.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A3D4823254F8014B20CACCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B06074E0E909B0BA02D4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98628937E1B56AE24515A12 /* AIAnalysisHub.swift in Sources */,
+				C9C541F344898FF4DC87016C /* AIChatPanel.swift in Sources */,
+				7F207C1E25C56B4BC872859E /* AIOrchestrator.swift in Sources */,
+				BF31B83FA2F7240FBC79C945 /* AuditLogger.swift in Sources */,
+				532832B115F1CE50A27BB313 /* BluetoothScannerView.swift in Sources */,
+				55E1CFEE7ED04E06966F4B50 /* ContentView.swift in Sources */,
+				9C5DC2CF17030088DB0E3EE7 /* ExploitationView.swift in Sources */,
+				3E8B71488AEB3949CCAE635F /* ForensicsView.swift in Sources */,
+				5583ADB5A78161ED571A2BD1 /* HardwareMonitor.swift in Sources */,
+				82ABFA0BDF00CEAE58C77532 /* MacHackerToolkitApp.swift in Sources */,
+				57824DC64E73F08EC745C4E2 /* MainDashboard.swift in Sources */,
+				34E1F485121FDC523BD3DF6F /* NetworkScannerView.swift in Sources */,
+				8A39185F6A89CF110C134F23 /* PasswordToolsView.swift in Sources */,
+				F83CFFDCFA482235993EC795 /* PluginManager.swift in Sources */,
+				2CB8A3349C30593991439A7D /* QuickActionButton.swift in Sources */,
+				9D663D4CC041A16EE171D363 /* ReportsDashboard.swift in Sources */,
+				95E7527E04861129FD80649A /* ReverseEngineeringView.swift in Sources */,
+				73290FB63F8BD465B0D2C01A /* SecurityTool.swift in Sources */,
+				6F05BFFD3D94944C94A8821D /* SettingsView.swift in Sources */,
+				54C4662E6CA668481C90A405 /* TimelineView.swift in Sources */,
+				83972C213AF9106021F0E6AD /* ToolCategoryView.swift in Sources */,
+				3F25733A04DFEAB5B1483107 /* ToolManager.swift in Sources */,
+				542B37F2C1D8ED103543D4D7 /* ToolkitProtocols.swift in Sources */,
+				15971FB627196538552149D9 /* ToolkitUtilities.swift in Sources */,
+				DBBDDB8A8DB367B2F8E5EAA2 /* UpdateManager.swift in Sources */,
+				CF637FF8921A0A543EFF0EBB /* WirelessScannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08C259FFB4332541E12AB761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5138ACCA6EC01D001AA7728 /* MacHackerToolkit */;
+			targetProxy = D66669743DE5893536354A2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24C50680FAE3FD3E719928AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldhackerlabs.machackertoolkit.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacHackerToolkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacHackerToolkit";
+			};
+			name = Release;
+		};
+		3C44664EBC5D92095BD079D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacHackerToolkit/SupportingFiles/MacHackerToolkit.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORKS = (
+					CoreWLAN,
+					IOBluetooth,
+					Security,
+					CryptoKit,
+					Network,
+					Metal,
+					MetalPerformanceShaders,
+					CoreML,
+					Charts,
+					SwiftUI,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MacHackerToolkit/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldhackerlabs.machackertoolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		65D46DCEE9BB5760C8068A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MacHackerToolkit/SupportingFiles/MacHackerToolkit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MacHackerToolkit/SupportingFiles/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		7B23C5DB5387B25FF85C2CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacHackerToolkit/SupportingFiles/MacHackerToolkit.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORKS = (
+					CoreWLAN,
+					IOBluetooth,
+					Security,
+					CryptoKit,
+					Network,
+					Metal,
+					MetalPerformanceShaders,
+					CoreML,
+					Charts,
+					SwiftUI,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MacHackerToolkit/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldhackerlabs.machackertoolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		BFCF214099823D47C6024AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldhackerlabs.machackertoolkit.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacHackerToolkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacHackerToolkit";
+			};
+			name = Debug;
+		};
+		E758750E49E40E96838B2F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MacHackerToolkit/SupportingFiles/MacHackerToolkit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MacHackerToolkit/SupportingFiles/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD141CB9075B79149D02AD5 /* Build configuration list for PBXProject "MacHackerToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D46DCEE9BB5760C8068A31 /* Debug */,
+				E758750E49E40E96838B2F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE1E19851682937690657B16 /* Build configuration list for PBXNativeTarget "MacHackerToolkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCF214099823D47C6024AA1 /* Debug */,
+				24C50680FAE3FD3E719928AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E571E46CDEF9AEEF6AA87800 /* Build configuration list for PBXNativeTarget "MacHackerToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C44664EBC5D92095BD079D2 /* Debug */,
+				7B23C5DB5387B25FF85C2CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDAF6157B1C9B83C80F018C9 /* Project object */;
+}

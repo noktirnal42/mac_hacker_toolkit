@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.worldhackerlabs.machackertoolkit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Mac Hacker Toolkit</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2024 World Hacker Labs. All rights reserved.</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSRequiresAProprietaryAccessGroup</key>
+	<false/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Mac Hacker Toolkit requires AppleEvents access to control external tools.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Mac Hacker Toolkit needs Bluetooth access for security testing and device scanning.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Mac Hacker Toolkit may use camera for QR code scanning in security assessments.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Mac Hacker Toolkit uses location for WiFi mapping and network analysis.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Mac Hacker Toolkit may access microphone for acoustic cryptanalysis research.</string>
+	<key>NSNetworkVolumesUsageDescription</key>
+	<string>Mac Hacker Toolkit requires network volume access for penetration testing operations.</string>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>Mac Hacker Toolkit accesses removable volumes for forensics and data recovery operations.</string>
+	<key>NSSystemAdministrationUsageDescription</key>
+	<string>Mac Hacker Toolkit requires system administration privileges for network-level security testing.</string>
+	<key>NSUserNotificationAlertStyle</key>
+	<string>banner</string>
+	<key>LSUIElement</key>
+	<false/>
+</dict>
+</plist>

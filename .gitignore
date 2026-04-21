@@ -1,0 +1,77 @@
+# Xcode
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+*.xcworkspacedata
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Build
+.build/
+Build/
+Logs/
+Metrics/
+.swiftpm/
+Packages.xcworkspace/contents.xcworkspacedata
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+KomodoIDE/
+AppCode/
+ rider/
+ rubymine/
+
+# macOS
+*.app
+*.dmg
+*.pkg
+*.mpkg
+*.download
+.Trashes
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary
+*.log
+*.tmp
+*.temp
+/tmp/
+/releases/
+/DerivedData/
+
+# Secrets
+*.key
+*.pem
+*.p12
+*.keystore
+.env
+*.env
+credentials.json
+secrets.json
+
+# Release artifacts (keep source, not binaries)
+# releases/*.dmg
+releases/*.sha256
+releases/*.md
+
+# Swift Package Manager
+Package.resolved
+Package.pins
+
+# Project specific
+.machacker2/
+gui/
+models/
+plugins/
+resources/
+tools/
+.claude/
