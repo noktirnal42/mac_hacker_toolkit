@@ -1,17 +1,49 @@
-# Mac Hacker Toolkit
+# 🛡️ Mac Hacker Toolkit
 
 <div align="center">
 
-![Mac Hacker Toolkit](https://img.shields.io/badge/Version-1.0.3-blue.svg)
-![macOS](https://img.shields.io/badge/macOS-14.0%2B-green.svg)
-![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-purple.svg)
+<!-- Brand Banner -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/noktirnal42/mac_hacker_toolkit/main/docs/assets/images/logo.svg">
+  <img alt="Mac Hacker Toolkit Logo" width="400" src="https://raw.githubusercontent.com/noktirnal42/mac_hacker_toolkit/main/docs/assets/images/logo.svg">
+</picture>
 
-**A comprehensive security testing suite for macOS with AI-powered analysis**
+<!-- Badges with Brand Colors -->
+<p align="center">
 
-[Features](#features) • [Installation](#installation) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Contributing](#contributing)
+![Version](https://img.shields.io/badge/Version-1.0.3-00D4AA?style=for-the-badge)
+![macOS](https://img.shields.io/badge/macOS-14.0%2B-00D4AA?style=for-the-badge&logo=apple&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-5.9-FF6B6B?style=for-the-badge&logo=swift&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-7B61FF?style=for-the-badge)
+[![Build](https://img.shields.io/badge/Build-Success-00D4AA?style=for-the-badge)](https://github.com/noktirnal42/mac_hacker_toolkit/actions)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Online-00D4AA?style=for-the-badge)](https://noktirnal42.github.io/mac_hacker_toolkit)
+
+</p>
+
+<!-- Description -->
+<h3>
+
+**A professional-grade security testing suite for macOS with AI-powered analysis**
+
+🍎 Native macOS • 🤖 AI-Powered • ⚡ Apple Silicon Optimized • 🔐 150+ Security Tools
+
+</h3>
+
+<!-- Quick Links -->
+<p>
+
+[Features](#-features) •
+[Installation](#-installation) •
+[Quick Start](#-quick-start) •
+[Documentation](https://noktirnal42.github.io/mac_hacker_toolkit/wiki/Home) •
+[Contributing](#-contributing)
+
+</p>
 
 </div>
+
+<!-- Brand Colors Demo -->
+<!-- Primary: #00D4AA (Cyan) | Secondary: #7B61FF (Purple) | Accent: #FF6B6B (Coral) -->
 
 ---
 
@@ -318,11 +350,48 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Issues**: [GitHub Issues](https://github.com/noktirnal42/mac_hacker_toolkit/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/noktirnal42/mac_hacker_toolkit/discussions)
 - **Wiki**: [GitHub Wiki](https://github.com/noktirnal42/mac_hacker_toolkit/wiki)
+- **Website**: [GitHub Pages](https://noktirnal42.github.io/mac_hacker_toolkit)
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for the security community**
+<!-- Brand Footer -->
+<p>
+
+<a href="https://github.com/noktirnal42/mac_hacker_toolkit">
+
+<img src="https://img.shields.io/badge/GitHub-noktirnal42/mac__hacker__toolkit-00D4AA?style=for-the-badge&logo=github" alt="GitHub Repo">
+
+</a>
+
+<a href="https://github.com/noktirnal42/mac_hacker_toolkit/stargazers">
+
+<img src="https://img.shields.io/badge/Stars-150%2B-00D4AA?style=for-the-badge" alt="Stars">
+
+</a>
+
+<a href="https://github.com/noktirnal42/mac_hacker_toolkit/network/members">
+
+<img src="https://img.shields.io/badge/Forks-50%2B-7B61FF?style=for-the-badge" alt="Forks">
+
+</a>
+
+</p>
+
+<!-- Brand Colors Separator -->
+<p>
+
+<span style="color:#00D4AA">●</span> Cyan
+<span style="color:#7B61FF">●</span> Purple
+<span style="color:#FF6B6B">●</span> Coral
+
+</p>
+
+**🔐 Mac Hacker Toolkit** — Built with ❤️ for the security community
+
+© 2024-2026 World Hacker Labs. All rights reserved.
 
 </div>
+
+<!-- Primary: #00D4AA (Cyan) | Secondary: #7B61FF (Purple) | Accent: #FF6B6B (Coral) -->
