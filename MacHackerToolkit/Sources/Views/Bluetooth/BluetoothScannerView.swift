@@ -138,7 +138,7 @@ struct BluetoothScannerView: View {
 
     private func simulateDevices() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            devices = [
+            self.devices = [
                 BluetoothDevice(name: "MacBook Pro", address: "AC:DE:48:00:11:22", type: "ble"),
                 BluetoothDevice(name: "AirPods Max", address: "AC:DE:48:00:22:33", type: "classic"),
                 BluetoothDevice(name: "Magic Mouse", address: "AC:DE:48:00:33:44", type: "ble"),

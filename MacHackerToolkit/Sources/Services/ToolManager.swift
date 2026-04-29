@@ -550,7 +550,7 @@ final class ToolManager: ObservableObject {
         isRefreshing = true
         defer { isRefreshing = false }
 
-        await withTaskGroup(of: (UUID, Bool).self) { group in
+        await withTaskGroup(of: (String, Bool).self) { group in
             for tool in tools {
                 group.addTask {
                     let installed = Self.isExecutableAvailable(at: tool.executablePath)
@@ -597,7 +597,7 @@ final class ToolManager: ObservableObject {
             "tool": tool.name,
             "category": tool.category.rawValue,
             "output": job.output,
-            "features": tool.aiFeatures.map(\.rawValue)
+            "features": tool.aiFeatures
         ]
 
         if !job.errorOutput.isEmpty {
@@ -605,23 +605,11 @@ final class ToolManager: ObservableObject {
         }
 
         job.parsedResults["aiAnalysis"] = analysisPayload
-
-        for feature in tool.aiFeatures {
-            switch feature {
-            case .resultAnalysis:
-                job.parsedResults["resultSummary"] = summarizeOutput(job.output)
-            case .vulnerabilityAssessment:
-                job.parsedResults["vulnerabilities"] = extractVulnerabilities(job.output)
-            case .anomalyDetection:
-                job.parsedResults["anomalies"] = extractAnomalies(job.output)
-            case .forensicTimeline:
-                job.parsedResults["timeline"] = buildTimeline(job.output)
-            case .trafficClassification:
-                job.parsedResults["trafficTypes"] = classifyTraffic(job.output)
-            default:
-                break
-            }
-        }
+        job.parsedResults["resultSummary"] = summarizeOutput(job.output)
+        job.parsedResults["vulnerabilities"] = extractVulnerabilities(job.output)
+        job.parsedResults["anomalies"] = extractAnomalies(job.output)
+        job.parsedResults["timeline"] = buildTimeline(job.output)
+        job.parsedResults["trafficTypes"] = classifyTraffic(job.output)
     }
 
     // MARK: - Process Execution
@@ -816,18 +804,7 @@ final class ToolManager: ObservableObject {
     // MARK: - Argument Building
 
     private func buildArguments(for tool: SecurityTool, parameters: [String]) -> [String] {
-        var args: [String] = []
-
-        for param in tool.parameters where param.required {
-            if let defaultValue = param.defaultValue {
-                if let flag = param.flag {
-                    args.append(flag)
-                }
-                args.append(defaultValue)
-            }
-        }
-
-        args.append(contentsOf: parameters)
+        var args: [String] = parameters
         return args
     }
 
@@ -1593,7 +1570,7 @@ final class ToolManager: ObservableObject {
 
         // ── Additional catalog entries (bulk) to reach 350+ ──────
 
-        let bulkTools: [(String, String, ToolCategory, String, String, String?, [ToolCapability], Bool, [AIFeature], Bool, RiskLevel)] = [
+        let bulkTools: [(String, String, ToolCategory, String, String, String?, [Capability], Bool, [AIFeature], Bool, RiskLevel)] = [
             // Network
             ("netcat", "Netcat", .network, "TCP/IP swiss army knife", "/opt/homebrew/bin/nc", "netcat", [.capture, .monitor], false, [], true, .medium),
             ("socat", "Socat", .network, "Advanced relay for bidirectional data transfer", "/opt/homebrew/bin/socat", "socat", [.capture, .monitor], false, [], false, .medium),

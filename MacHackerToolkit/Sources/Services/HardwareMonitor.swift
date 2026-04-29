@@ -99,19 +99,21 @@ public struct BluetoothStatus: Sendable {
 }
 
 /// A connected Bluetooth peripheral.
-public struct BluetoothDevice: Sendable, Identifiable {
+public struct BluetoothDevice: Sendable, Identifiable, Hashable {
     public let id: String
     public let name: String
     public let address: String
     public let isPaired: Bool
     public let deviceClass: Int
+    public let type: String
 
-    public init(id: String = UUID().uuidString, name: String = "Unknown", address: String = "00:00:00:00:00:00", isPaired: Bool = false, deviceClass: Int = 0) {
+    public init(id: String = UUID().uuidString, name: String = "Unknown", address: String = "00:00:00:00:00:00", isPaired: Bool = false, deviceClass: Int = 0, type: String = "unknown") {
         self.id = id
         self.name = name
         self.address = address
         self.isPaired = isPaired
         self.deviceClass = deviceClass
+        self.type = type
     }
 }
 
