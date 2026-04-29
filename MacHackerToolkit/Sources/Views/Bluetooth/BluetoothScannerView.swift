@@ -204,13 +204,14 @@ struct BluetoothScannerView: View {
     private func getPairedBluetoothDevices() -> [BluetoothDevice] {
         var pairedDevices: [BluetoothDevice] = []
 
-        // Use IOBluetooth to get paired devices
+        // Use system_profiler to get Bluetooth devices
         let process = Process()
-        process.executableURL = URL(fileURLWithPath: "/usr/bin/system_profiler")
-        process.arguments = ["SPBluetoothDataType", "-xml"]
+        process.executableURL = URL(fileURLWithPath: "/usr/sbin/system_profiler")
+        process.arguments = ["SPBluetoothDataType"]
 
         let pipe = Pipe()
         process.standardOutput = pipe
+        process.standardError = Pipe()
 
         do {
             try process.run()
@@ -232,36 +233,78 @@ struct BluetoothScannerView: View {
 
     private func parseBluetoothOutput(_ output: String) -> [BluetoothDevice] {
         var devices: [BluetoothDevice] = []
+        let lines = output.split(separator: "\n", omittingEmptySubsequences: false)
 
-        // Simple parsing - look for device names and addresses
-        let lines = output.split(separator: "\n")
-        var currentDevice: (name: String, address: String)? = nil
+        var i = 0
+        while i < lines.count {
+            let line = lines[i].trimmingCharacters(in: .whitespaces)
 
-        for line in lines {
-            let trimmed = line.trimmingCharacters(in: .whitespaces)
+            // Look for Connected or Not Connected sections
+            if line.contains("Connected:") || line.contains("Not Connected:") {
+                i += 1
 
-            if trimmed.contains("product_name") || trimmed.contains("name") {
-                if let nameRange = trimmed.range(of: ">") {
-                    let name = String(trimmed[nameRange.upperBound...]).trimmingCharacters(in: CharacterSet(charactersIn: "</>"))
-                    currentDevice?.name = name
-                }
-            }
+                // Parse devices in this section
+                while i < lines.count {
+                    let deviceLine = lines[i].trimmingCharacters(in: .whitespaces)
 
-            if trimmed.contains("address") {
-                if let addressRange = trimmed.range(of: ">") {
-                    let address = String(trimmed[addressRange.upperBound...]).trimmingCharacters(in: CharacterSet(charactersIn: "</>"))
-                    if let device = currentDevice {
-                        let btDevice = BluetoothDevice(
-                            name: device.name,
-                            address: address,
-                            isPaired: true,
-                            type: address.count == 17 ? "classic" : "ble"
-                        )
-                        devices.append(btDevice)
+                    // Stop if we hit another section
+                    if deviceLine.contains("Bluetooth Controller:") ||
+                       deviceLine.contains("Connected:") ||
+                       deviceLine.contains("Not Connected:") ||
+                       deviceLine.isEmpty {
+                        if !deviceLine.isEmpty && deviceLine != "" {
+                            i += 1
+                            break
+                        }
+                        i += 1
+                        continue
                     }
-                    currentDevice = nil
+
+                    // Look for device name (line with content but no colon after first word)
+                    if !deviceLine.contains(":") && !deviceLine.isEmpty {
+                        let deviceName = deviceLine
+                        var deviceAddress = ""
+                        let isConnected = line.contains("Connected:") && !line.contains("Not Connected:")
+
+                        // Look for Address line following the device name
+                        i += 1
+                        while i < lines.count {
+                            let addrLine = lines[i].trimmingCharacters(in: .whitespaces)
+
+                            if addrLine.contains("Address:") {
+                                if let colonRange = addrLine.range(of: ":") {
+                                    deviceAddress = String(addrLine[colonRange.upperBound...]).trimmingCharacters(in: .whitespaces)
+                                }
+                                break
+                            } else if addrLine.isEmpty || (!addrLine.contains(":") && addrLine.count < 30) {
+                                i += 1
+                                continue
+                            } else if addrLine.contains(":") && !addrLine.contains("Address:") {
+                                // Hit another field, stop looking for address
+                                i -= 1
+                                break
+                            }
+                            i += 1
+                        }
+
+                        // Create device if we have at least a name
+                        if !deviceName.isEmpty {
+                            let device = BluetoothDevice(
+                                name: deviceName,
+                                address: deviceAddress.isEmpty ? "XX:XX:XX:XX:XX:XX" : deviceAddress,
+                                isPaired: isConnected,
+                                type: isConnected ? "classic" : "ble"
+                            )
+                            devices.append(device)
+                        }
+                    }
+
+                    i += 1
                 }
+                continue
             }
+
+            i += 1
         }
 
         return devices
