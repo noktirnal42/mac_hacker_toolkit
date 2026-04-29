@@ -272,6 +272,13 @@ enum ReportBuilderStep: Int, CaseIterable, Identifiable {
 
 // MARK: - Risk Matrix Cell Data
 
+enum RiskLevel {
+    case critical
+    case high
+    case medium
+    case low
+}
+
 struct RiskMatrixCell: Identifiable {
     let id = UUID()
     let likelihood: Int

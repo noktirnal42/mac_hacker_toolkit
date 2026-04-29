@@ -603,6 +603,11 @@ final class AuditLogger: ObservableObject {
 
     // MARK: - Export
 
+    enum OutputFormat {
+        case json
+        case csv
+    }
+
     func export(format: OutputFormat) -> URL {
         let exportDir = logDirectory.appendingPathComponent("Exports", isDirectory: true)
         try? FileManager.default.createDirectory(at: exportDir, withIntermediateDirectories: true)

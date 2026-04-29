@@ -8,34 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		15971FB627196538552149D9 /* ToolkitUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EC69CC1208CF0DADBB18A3 /* ToolkitUtilities.swift */; };
+		208DBD660029DBF114D0AF5A /* PasswordToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD37D2B1D30130A89C3525E /* PasswordToolsView.swift */; };
 		22EBE6CBC1C19DEB78A8BADA /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707B5A4E64F179271BF3FC60 /* CoreML.framework */; };
+		25E1CFF6A513E9211A5DD5C1 /* WirelessScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43DADEF32A81F27031951E /* WirelessScannerView.swift */; };
 		2CB8A3349C30593991439A7D /* QuickActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA818081F0016460A22A390A /* QuickActionButton.swift */; };
 		3446AD5F1698CAE17803B402 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951CBF018429DB206B9190E3 /* CoreWLAN.framework */; };
-		34E1F485121FDC523BD3DF6F /* NetworkScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32548656AFEA01DDDB5A1342 /* NetworkScannerView.swift */; };
 		37126D588CA0C5C729FF466C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1FF30BD7065B9496209A34 /* SwiftUI.framework */; };
 		3E8B71488AEB3949CCAE635F /* ForensicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A5DC7D4EFF4BBACDE05F9 /* ForensicsView.swift */; };
 		3F25733A04DFEAB5B1483107 /* ToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3644578AFB6BB5425E7AC091 /* ToolManager.swift */; };
-		532832B115F1CE50A27BB313 /* BluetoothScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE76FD893F547770599D5D /* BluetoothScannerView.swift */; };
 		542B37F2C1D8ED103543D4D7 /* ToolkitProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41932CBA3817A447C13DF27F /* ToolkitProtocols.swift */; };
 		54C4662E6CA668481C90A405 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812AB3C4652A96E28AD9222C /* TimelineView.swift */; };
 		5583ADB5A78161ED571A2BD1 /* HardwareMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD6CD27B37659D623B6F2F3 /* HardwareMonitor.swift */; };
 		55E1CFEE7ED04E06966F4B50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529A1C62D6EE10AB4668DE4 /* ContentView.swift */; };
 		57824DC64E73F08EC745C4E2 /* MainDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DAA5230D20085728F26A5 /* MainDashboard.swift */; };
+		6100DD486786854C1D2517E7 /* ExploitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1692810B42C7D3448865D984 /* ExploitationView.swift */; };
+		6C4BA333B31BE30B84BC0FE3 /* BluetoothScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98251C147B7CD6A51D917829 /* BluetoothScannerView.swift */; };
 		6F05BFFD3D94944C94A8821D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC7AE0C62C847820F8DCE23 /* SettingsView.swift */; };
 		73290FB63F8BD465B0D2C01A /* SecurityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E60258D9C218EC47D8D2F /* SecurityTool.swift */; };
 		748252B01DA4F6DC1B7AA53E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9399385578984035988AAB /* Metal.framework */; };
+		754609E89B315B73D92684AD /* NetworkScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EB2B3388061F6CDC305A /* NetworkScannerView.swift */; };
 		788B8543085E959EFE19A81A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC652202DCAF35CF4CE9713 /* Charts.framework */; };
 		7F207C1E25C56B4BC872859E /* AIOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F4E04F7E270468D6EC04DC /* AIOrchestrator.swift */; };
 		82ABFA0BDF00CEAE58C77532 /* MacHackerToolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BF5F098E99F5E14AE9260B /* MacHackerToolkitApp.swift */; };
-		83972C213AF9106021F0E6AD /* ToolCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CB89CD0AB81EF5A828161 /* ToolCategoryView.swift */; };
-		8A39185F6A89CF110C134F23 /* PasswordToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF2E79CD747596CB502F7A /* PasswordToolsView.swift */; };
 		8BD63824112E7EBA44A6E034 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F4A124943116999F36D3C9 /* IOBluetooth.framework */; };
 		95E7527E04861129FD80649A /* ReverseEngineeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE60E1D7468E8C2B11AAC31 /* ReverseEngineeringView.swift */; };
-		9C5DC2CF17030088DB0E3EE7 /* ExploitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF48F458701C9DE02061BBB /* ExploitationView.swift */; };
 		9D663D4CC041A16EE171D363 /* ReportsDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F980CC83190BB96AC788202 /* ReportsDashboard.swift */; };
 		BF31B83FA2F7240FBC79C945 /* AuditLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E8368482459D30E37DFAF /* AuditLogger.swift */; };
 		C9C541F344898FF4DC87016C /* AIChatPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BA0EA20272EE1EE2C4E61 /* AIChatPanel.swift */; };
-		CF637FF8921A0A543EFF0EBB /* WirelessScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06268ECA319E9B46FC16B5 /* WirelessScannerView.swift */; };
 		D0D337B7996062938D4F8A7F /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A37D984B1C24A84377A18DD /* CryptoKit.framework */; };
 		D733B3E6BC16745C01FECF59 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D391365CFD1075612CD609 /* Network.framework */; };
 		D98628937E1B56AE24515A12 /* AIAnalysisHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F4EE6767A410382E07085 /* AIAnalysisHub.swift */; };
@@ -59,38 +58,38 @@
 /* Begin PBXFileReference section */
 		0529A1C62D6EE10AB4668DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		059DAA5230D20085728F26A5 /* MainDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboard.swift; sourceTree = "<group>"; };
+		0682EB2B3388061F6CDC305A /* NetworkScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScannerView.swift; sourceTree = "<group>"; };
+		1692810B42C7D3448865D984 /* ExploitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitationView.swift; sourceTree = "<group>"; };
 		1B1E60258D9C218EC47D8D2F /* SecurityTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTool.swift; sourceTree = "<group>"; };
 		1F464CF0C3459C34102800EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		244A5DC7D4EFF4BBACDE05F9 /* ForensicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForensicsView.swift; sourceTree = "<group>"; };
 		2F980CC83190BB96AC788202 /* ReportsDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsDashboard.swift; sourceTree = "<group>"; };
-		32548656AFEA01DDDB5A1342 /* NetworkScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScannerView.swift; sourceTree = "<group>"; };
 		3644578AFB6BB5425E7AC091 /* ToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolManager.swift; sourceTree = "<group>"; };
 		3A7E8368482459D30E37DFAF /* AuditLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditLogger.swift; sourceTree = "<group>"; };
+		3DD37D2B1D30130A89C3525E /* PasswordToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordToolsView.swift; sourceTree = "<group>"; };
+		3E43DADEF32A81F27031951E /* WirelessScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WirelessScannerView.swift; sourceTree = "<group>"; };
 		41932CBA3817A447C13DF27F /* ToolkitProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolkitProtocols.swift; sourceTree = "<group>"; };
 		4C4BA0EA20272EE1EE2C4E61 /* AIChatPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatPanel.swift; sourceTree = "<group>"; };
 		4D9399385578984035988AAB /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		54EC69CC1208CF0DADBB18A3 /* ToolkitUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolkitUtilities.swift; sourceTree = "<group>"; };
 		5A37D984B1C24A84377A18DD /* CryptoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoKit.framework; path = System/Library/Frameworks/CryptoKit.framework; sourceTree = SDKROOT; };
+		62817DE9228CCD381AC72F41 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		6D9F4EE6767A410382E07085 /* AIAnalysisHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnalysisHub.swift; sourceTree = "<group>"; };
 		707B5A4E64F179271BF3FC60 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		73D391365CFD1075612CD609 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 		7808FF7C6516110AE56046D4 /* MacHackerToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacHackerToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E62A95E3321F60D69FC2B9 /* MacHackerToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacHackerToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		812AB3C4652A96E28AD9222C /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
-		89BF2E79CD747596CB502F7A /* PasswordToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordToolsView.swift; sourceTree = "<group>"; };
 		8EC652202DCAF35CF4CE9713 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
 		9405B6D77607C12FB5F4F194 /* UpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateManager.swift; sourceTree = "<group>"; };
 		951CBF018429DB206B9190E3 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
-		9BF48F458701C9DE02061BBB /* ExploitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitationView.swift; sourceTree = "<group>"; };
+		98251C147B7CD6A51D917829 /* BluetoothScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScannerView.swift; sourceTree = "<group>"; };
 		9E1FF30BD7065B9496209A34 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		AA818081F0016460A22A390A /* QuickActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionButton.swift; sourceTree = "<group>"; };
 		CAD6CD27B37659D623B6F2F3 /* HardwareMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareMonitor.swift; sourceTree = "<group>"; };
 		CBC7AE0C62C847820F8DCE23 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		D45CB89CD0AB81EF5A828161 /* ToolCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCategoryView.swift; sourceTree = "<group>"; };
 		D6F4A124943116999F36D3C9 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
 		DB63E04784AECE94F79F290E /* PluginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginManager.swift; sourceTree = "<group>"; };
-		DF06268ECA319E9B46FC16B5 /* WirelessScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WirelessScannerView.swift; sourceTree = "<group>"; };
-		E5AE76FD893F547770599D5D /* BluetoothScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScannerView.swift; sourceTree = "<group>"; };
 		E74DFC7E62C642B984DB7F9C /* tool_catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tool_catalog.json; sourceTree = "<group>"; };
 		E9BF5F098E99F5E14AE9260B /* MacHackerToolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacHackerToolkitApp.swift; sourceTree = "<group>"; };
 		F2F4E04F7E270468D6EC04DC /* AIOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIOrchestrator.swift; sourceTree = "<group>"; };
@@ -123,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				671A1318C1A1DCC1CC085675 /* Models */,
-				644E5603277C2B11CE28CCF0 /* Plugins */,
 				D1A769C3726E05FF09A045CF /* Protocols */,
 				18AF915BB217ABE5269BAB61 /* Resources */,
 				B353E704B056F2F06A63F769 /* Services */,
@@ -135,6 +133,22 @@
 			);
 			name = Sources;
 			path = MacHackerToolkit/Sources;
+			sourceTree = "<group>";
+		};
+		06034398817BBF12FE303B38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0682EB2B3388061F6CDC305A /* NetworkScannerView.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		11D9F876B4FD3C2BF8216CD9 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				98251C147B7CD6A51D917829 /* BluetoothScannerView.swift */,
+			);
+			path = Bluetooth;
 			sourceTree = "<group>";
 		};
 		18AF915BB217ABE5269BAB61 /* Resources */ = {
@@ -191,16 +205,10 @@
 		626A11F1D60B5D52CD2CB40E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				62817DE9228CCD381AC72F41 /* .gitkeep */,
 			);
 			name = Tests;
 			path = MacHackerToolkit/Tests;
-			sourceTree = "<group>";
-		};
-		644E5603277C2B11CE28CCF0 /* Plugins */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Plugins;
 			sourceTree = "<group>";
 		};
 		671A1318C1A1DCC1CC085675 /* Models */ = {
@@ -231,13 +239,16 @@
 			isa = PBXGroup;
 			children = (
 				4FEFBC98A8262405EFD972C6 /* AI */,
-				ED7E8EF923E7D3CA3E904D41 /* Components */,
+				11D9F876B4FD3C2BF8216CD9 /* Bluetooth */,
 				8AD6149FD16E5FFDC04CBCA3 /* Dashboard */,
+				C7AF88310FCA7303CBF88FA6 /* Exploitation */,
 				933F868B0F07B78210674A36 /* Forensics */,
+				06034398817BBF12FE303B38 /* Network */,
+				A129E8690F851519B8E7F896 /* Password */,
 				FEAEB6F18C5321D71C1E0AF9 /* Reports */,
 				BB9BEFEF1A964791571AC2E7 /* ReverseEngineering */,
 				360DA053C4F87C91D2F706F2 /* Settings */,
-				BB935287160B7C4A88AEC8AF /* Tools */,
+				DC999F172A19D025B8EF3201 /* Wireless */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +261,14 @@
 				60FA9A7A1FF1433B95AFE9D0 /* Frameworks */,
 				49DBD5F2249D8CA43FA81E6C /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		A129E8690F851519B8E7F896 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				3DD37D2B1D30130A89C3525E /* PasswordToolsView.swift */,
+			);
+			path = Password;
 			sourceTree = "<group>";
 		};
 		B353E704B056F2F06A63F769 /* Services */ = {
@@ -265,25 +284,20 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		BB935287160B7C4A88AEC8AF /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				E5AE76FD893F547770599D5D /* BluetoothScannerView.swift */,
-				9BF48F458701C9DE02061BBB /* ExploitationView.swift */,
-				32548656AFEA01DDDB5A1342 /* NetworkScannerView.swift */,
-				89BF2E79CD747596CB502F7A /* PasswordToolsView.swift */,
-				D45CB89CD0AB81EF5A828161 /* ToolCategoryView.swift */,
-				DF06268ECA319E9B46FC16B5 /* WirelessScannerView.swift */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
 		BB9BEFEF1A964791571AC2E7 /* ReverseEngineering */ = {
 			isa = PBXGroup;
 			children = (
 				FCE60E1D7468E8C2B11AAC31 /* ReverseEngineeringView.swift */,
 			);
 			path = ReverseEngineering;
+			sourceTree = "<group>";
+		};
+		C7AF88310FCA7303CBF88FA6 /* Exploitation */ = {
+			isa = PBXGroup;
+			children = (
+				1692810B42C7D3448865D984 /* ExploitationView.swift */,
+			);
+			path = Exploitation;
 			sourceTree = "<group>";
 		};
 		D1A769C3726E05FF09A045CF /* Protocols */ = {
@@ -302,11 +316,12 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		ED7E8EF923E7D3CA3E904D41 /* Components */ = {
+		DC999F172A19D025B8EF3201 /* Wireless */ = {
 			isa = PBXGroup;
 			children = (
+				3E43DADEF32A81F27031951E /* WirelessScannerView.swift */,
 			);
-			path = Components;
+			path = Wireless;
 			sourceTree = "<group>";
 		};
 		FEAEB6F18C5321D71C1E0AF9 /* Reports */ = {
@@ -422,15 +437,15 @@
 				C9C541F344898FF4DC87016C /* AIChatPanel.swift in Sources */,
 				7F207C1E25C56B4BC872859E /* AIOrchestrator.swift in Sources */,
 				BF31B83FA2F7240FBC79C945 /* AuditLogger.swift in Sources */,
-				532832B115F1CE50A27BB313 /* BluetoothScannerView.swift in Sources */,
+				6C4BA333B31BE30B84BC0FE3 /* BluetoothScannerView.swift in Sources */,
 				55E1CFEE7ED04E06966F4B50 /* ContentView.swift in Sources */,
-				9C5DC2CF17030088DB0E3EE7 /* ExploitationView.swift in Sources */,
+				6100DD486786854C1D2517E7 /* ExploitationView.swift in Sources */,
 				3E8B71488AEB3949CCAE635F /* ForensicsView.swift in Sources */,
 				5583ADB5A78161ED571A2BD1 /* HardwareMonitor.swift in Sources */,
 				82ABFA0BDF00CEAE58C77532 /* MacHackerToolkitApp.swift in Sources */,
 				57824DC64E73F08EC745C4E2 /* MainDashboard.swift in Sources */,
-				34E1F485121FDC523BD3DF6F /* NetworkScannerView.swift in Sources */,
-				8A39185F6A89CF110C134F23 /* PasswordToolsView.swift in Sources */,
+				754609E89B315B73D92684AD /* NetworkScannerView.swift in Sources */,
+				208DBD660029DBF114D0AF5A /* PasswordToolsView.swift in Sources */,
 				F83CFFDCFA482235993EC795 /* PluginManager.swift in Sources */,
 				2CB8A3349C30593991439A7D /* QuickActionButton.swift in Sources */,
 				9D663D4CC041A16EE171D363 /* ReportsDashboard.swift in Sources */,
@@ -438,12 +453,11 @@
 				73290FB63F8BD465B0D2C01A /* SecurityTool.swift in Sources */,
 				6F05BFFD3D94944C94A8821D /* SettingsView.swift in Sources */,
 				54C4662E6CA668481C90A405 /* TimelineView.swift in Sources */,
-				83972C213AF9106021F0E6AD /* ToolCategoryView.swift in Sources */,
 				3F25733A04DFEAB5B1483107 /* ToolManager.swift in Sources */,
 				542B37F2C1D8ED103543D4D7 /* ToolkitProtocols.swift in Sources */,
 				15971FB627196538552149D9 /* ToolkitUtilities.swift in Sources */,
 				DBBDDB8A8DB367B2F8E5EAA2 /* UpdateManager.swift in Sources */,
-				CF637FF8921A0A543EFF0EBB /* WirelessScannerView.swift in Sources */,
+				25E1CFF6A513E9211A5DD5C1 /* WirelessScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

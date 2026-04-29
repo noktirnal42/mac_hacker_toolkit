@@ -135,7 +135,7 @@ final class AppState: ObservableObject {
     }
     
     // MARK: - Public Methods
-    
+
     func createNewProject() {
         let panel = NSOpenPanel()
         panel.canChooseFiles = false
@@ -267,7 +267,7 @@ struct ScanResult: Codable, Identifiable {
     let parsedData: Data?
     let timestamp: Date
     let aiAnalysis: String?
-    
+
     init(tool: String, parameters: [String], rawOutput: String, parsedData: Data? = nil, aiAnalysis: String? = nil) {
         self.id = UUID()
         self.tool = tool

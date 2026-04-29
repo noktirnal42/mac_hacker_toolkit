@@ -112,17 +112,12 @@ extension ContentView {
 // MARK: - Setup
 extension ContentView {
     private func setupInitialState() {
-        // Initialize first-run setup
-        Task {
-            await appState.checkFirstRun()
-        }
-        
         // Load tool configurations
         toolManager.loadTools()
-        
+
         // Setup hardware monitoring
         setupHardwareMonitoring()
-        
+
         // Check for updates
         checkForUpdates()
     }
