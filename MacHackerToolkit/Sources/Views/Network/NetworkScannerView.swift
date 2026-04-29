@@ -136,13 +136,47 @@ struct NetworkScannerView: View {
             results = []
         } else {
             isScanning = true
-            results = ["[*] Starting scan...", "[*] Scanning network..."]
+            results = ["[*] Starting scan...", "[*] Scanning \(targetAddress)..."]
 
             Task {
-                let params = getScanParameters()
-                _ = await toolManager.launchTool("nmap", parameters: params)
-                isScanning = false
-                results.append("[+] Scan complete")
+                await performNmapScan()
+
+                DispatchQueue.main.async {
+                    self.isScanning = false
+                }
+            }
+        }
+    }
+
+    private func performNmapScan() async {
+        let params = getScanParameters()
+
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: "/opt/homebrew/bin/nmap")
+        process.arguments = params
+
+        let pipe = Pipe()
+        process.standardOutput = pipe
+        process.standardError = Pipe()
+
+        do {
+            try process.run()
+            process.waitUntilExit()
+
+            let data = pipe.fileHandleForReading.readDataToEndOfFile()
+            if let output = String(data: data, encoding: .utf8) {
+                let lines = output.split(separator: "\n", omittingEmptySubsequences: false).map(String.init)
+
+                DispatchQueue.main.async {
+                    self.results = lines.filter { !$0.isEmpty }
+                    if self.results.isEmpty {
+                        self.results = ["[*] Scan completed with no output"]
+                    }
+                }
+            }
+        } catch {
+            DispatchQueue.main.async {
+                self.results = ["[!] Error: Nmap not found or failed to execute", "[!] Make sure nmap is installed: brew install nmap"]
             }
         }
     }
