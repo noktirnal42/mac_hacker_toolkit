@@ -24,6 +24,7 @@
 		6100DD486786854C1D2517E7 /* ExploitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1692810B42C7D3448865D984 /* ExploitationView.swift */; };
 		6C4BA333B31BE30B84BC0FE3 /* BluetoothScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98251C147B7CD6A51D917829 /* BluetoothScannerView.swift */; };
 		6F05BFFD3D94944C94A8821D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC7AE0C62C847820F8DCE23 /* SettingsView.swift */; };
+		7049B97EE01099B19B2C4DE6 /* HardwareMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D38AB42BDC34E8772D585B /* HardwareMonitorTests.swift */; };
 		73290FB63F8BD465B0D2C01A /* SecurityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E60258D9C218EC47D8D2F /* SecurityTool.swift */; };
 		748252B01DA4F6DC1B7AA53E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9399385578984035988AAB /* Metal.framework */; };
 		754609E89B315B73D92684AD /* NetworkScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EB2B3388061F6CDC305A /* NetworkScannerView.swift */; };
@@ -65,6 +66,7 @@
 		244A5DC7D4EFF4BBACDE05F9 /* ForensicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForensicsView.swift; sourceTree = "<group>"; };
 		2F980CC83190BB96AC788202 /* ReportsDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsDashboard.swift; sourceTree = "<group>"; };
 		3644578AFB6BB5425E7AC091 /* ToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolManager.swift; sourceTree = "<group>"; };
+		39D38AB42BDC34E8772D585B /* HardwareMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareMonitorTests.swift; sourceTree = "<group>"; };
 		3A7E8368482459D30E37DFAF /* AuditLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditLogger.swift; sourceTree = "<group>"; };
 		3DD37D2B1D30130A89C3525E /* PasswordToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordToolsView.swift; sourceTree = "<group>"; };
 		3E43DADEF32A81F27031951E /* WirelessScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WirelessScannerView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				62817DE9228CCD381AC72F41 /* .gitkeep */,
+				39D38AB42BDC34E8772D585B /* HardwareMonitorTests.swift */,
 			);
 			name = Tests;
 			path = MacHackerToolkit/Tests;
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7049B97EE01099B19B2C4DE6 /* HardwareMonitorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
